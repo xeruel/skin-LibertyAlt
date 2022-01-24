@@ -4,6 +4,9 @@
 	border-bottom-left-radius: 0.35rem;
 	display: inline-block;
 	font-size: 0.9rem;
+	border: 0;
+	background-color: transparent;
+	padding: 0;
 }
 
 .Liberty .content-wrapper .liberty-content .liberty-content-main .toc .toctitle {
