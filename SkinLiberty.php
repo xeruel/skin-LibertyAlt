@@ -1,6 +1,6 @@
 <?php
 // @codingStandardsIgnoreLine
-class SkinLiberty extends SkinTemplate {
+class SkinLibertyAlt extends SkinTemplate {
 	// @codingStandardsIgnoreStart
 	public $skinname = 'liberty';
 	public $stylename = 'Liberty';
