@@ -144,13 +144,13 @@ class SkinLibertyAlt extends SkinTemplate {
 		// layout settings 
 		global $wgLibertyUserSidebarSettings;
 
-		$LibertyUserWidthSettings = $user->getOption( 'liberty-layout-width' );
+		$LibertyAltUserWidthSettings = $user->getOption( 'liberty-layout-width' );
 		$wgLibertyUserSidebarSettings = $user->getOption( 'liberty-layout-sidebar' );
-		$LibertyUserNavbarSettings = $user->getOption( 'liberty-layout-navfix' );
-		$LibertyUsercontrolbarSettings = $user->getOption( 'liberty-layout-controlbar' );
+		$LibertyAltUserNavbarSettings = $user->getOption( 'liberty-layout-navfix' );
+		$LibertyAltUsercontrolbarSettings = $user->getOption( 'liberty-layout-controlbar' );
 
 
-		if ( isset( $LibertyUserNavbarSettings ) && $LibertyUserNavbarSettings ) {
+		if ( isset( $LibertyAltUserNavbarSettings ) && $LibertyAltUserNavbarSettings ) {
 			$out->addInlineStyle(
 				".navbar-fixed-top {
 					position: absolute;
@@ -166,19 +166,19 @@ class SkinLibertyAlt extends SkinTemplate {
 			);
 		};
 
-		if ( $LibertyUserWidthSettings != null ) {
+		if ( $LibertyAltUserWidthSettings != null ) {
 			$out->addInlineStyle(
 				".Liberty .content-wrapper {
-					max-width: $LibertyUserWidthSettings;
+					max-width: $LibertyAltUserWidthSettings;
 				}
 
 				.Liberty .nav-wrapper .navbar {
-					max-width: $LibertyUserWidthSettings;
+					max-width: $LibertyAltUserWidthSettings;
 				}"
 			);
 		}
 
-		if ( isset($LibertyUsercontrolbarSettings ) && $LibertyUsercontrolbarSettings ) {
+		if ( isset($LibertyAltUsercontrolbarSettings ) && $LibertyAltUsercontrolbarSettings ) {
 			$out->addInlineStyle(
 				".Liberty .content-wrapper #liberty-bottombtn {
 					display: none;
@@ -187,17 +187,17 @@ class SkinLibertyAlt extends SkinTemplate {
 		};
 
 		// 폰트 설정
-		$LibertyUserFontSettings = $user->getOption('liberty-font');
-		if ($LibertyUserFontSettings != null) {
+		$LibertyAltUserFontSettings = $user->getOption('liberty-font');
+		if ($LibertyAltUserFontSettings != null) {
 			$out->addInlineStyle(
 				"body, h1, h2, h3, h4, h5, h6, b {
-					font-family: $LibertyUserFontSettings;
+					font-family: $LibertyAltUserFontSettings;
 				}"
 			);
 		}
 
 		// Ads setting
-		$LibertyUserMoreArticleSettings = $user->getOption('liberty-layout-morearticle');
+		$LibertyAltUserMoreArticleSettings = $user->getOption('liberty-layout-morearticle');
 		if (isset($wgLibertyAdSetting['client']) && $wgLibertyAdSetting['client']) {
 			// if user is login, reduce ads
 			if ( isset($wgLibertyAdGroup) && $wgLibertyAdGroup == 'differ' && $user->isLoggedIn()) {
@@ -206,13 +206,13 @@ class SkinLibertyAlt extends SkinTemplate {
 				if ($user->isNewbie() == False) {
 					$wgLibertyAdSetting['sidebar'] == null;
 				}
-				if (isset($LibertyUserMoreArticleSettings) && $LibertyUserMoreArticleSettings) {
+				if (isset($LibertyAltUserMoreArticleSettings) && $LibertyAltUserMoreArticleSettings) {
 					$wgLibertyAdSetting['belowarticle'] == null;
 				}
 			}
 		}
 
-		$LibertyDarkCss = "body, .Liberty, .dropdown-menu, .dropdown-item, .Liberty .nav-wrapper .navbar .form-inline .btn, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link.active, .Liberty .content-wrapper .liberty-content .liberty-content-main table.wikitable tr > th, .Liberty .content-wrapper .liberty-content .liberty-content-main table.wikitable tr > td, table.mw_metadata th, .Liberty .content-wrapper .liberty-content .liberty-content-main table.infobox th, #preferences fieldset:not(.prefsection), #preferences div.mw-prefs-buttons, .navbox, .navbox-subgroup, .navbox > tbody > tr:nth-child(even) > .navbox-list {
+		$LibertyAltDarkCss = "body, .Liberty, .dropdown-menu, .dropdown-item, .Liberty .nav-wrapper .navbar .form-inline .btn, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link.active, .Liberty .content-wrapper .liberty-content .liberty-content-main table.wikitable tr > th, .Liberty .content-wrapper .liberty-content .liberty-content-main table.wikitable tr > td, table.mw_metadata th, .Liberty .content-wrapper .liberty-content .liberty-content-main table.infobox th, #preferences fieldset:not(.prefsection), #preferences div.mw-prefs-buttons, .navbox, .navbox-subgroup, .navbox > tbody > tr:nth-child(even) > .navbox-list {
 			background-color: #000;
 			color: #DDD;
 		}
@@ -239,11 +239,11 @@ class SkinLibertyAlt extends SkinTemplate {
 		.flow-ui-navigationWidget { color: #FFF; }
 		.Liberty .content-wrapper .liberty-content .liberty-content-main .toccolours, .Liberty .content-wrapper .liberty-content .liberty-content-main .toc ul, .Liberty .content-wrapper .liberty-content .liberty-content-main .toc li { background-color: #000; }
 		.Liberty .content-wrapper .liberty-content .liberty-content-main .toc .toctitle { background-color: #1F2023; }";
-		$LibertyUserDarkSetting = $user->getOption('liberty-dark');;
-		if ($LibertyUserDarkSetting === 'dark') {
-			$out->addInlineStyle($LibertyDarkCss);
-		} elseif ($LibertyUserDarkSetting === null) {
-			$out->addInlineStyle($LibertyCss);
+		$LibertyAltUserDarkSetting = $user->getOption('liberty-dark');;
+		if ($LibertyAltUserDarkSetting === 'dark') {
+			$out->addInlineStyle($LibertyAltDarkCss);
+		} elseif ($LibertyAltUserDarkSetting === null) {
+			$out->addInlineStyle($LibertyAltCss);
 		}
 		// @codingStandardsIgnoreEnd
 	}
