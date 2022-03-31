@@ -114,8 +114,8 @@
 	},
 	"AutoloadClasses": {
 		"SkinLibertyAlt": "SkinLibertyAlt.php",
-		"LibertyTemplate": "LibertyAltTemplate.php",
-		"LibertyHooks": "LibertyAltHooks.php"
+		"LibertyAltTemplate": "LibertyAltTemplate.php",
+		"LibertyAltHooks": "LibertyAltHooks.php"
 	},
 	"Hooks": {
 		"GetPreferences": "LibertyAltHooks::onGetPreferences"
