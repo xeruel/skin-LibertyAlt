@@ -6,7 +6,7 @@ class LibertyHooks extends Hooks {
 	 * @param Preferences &$preferences preferences
 	 */
 	public static function onGetPreferences( $user, &$preferences ) {
-		global $wgLibertyAdSetting, $wgLibertyAdGroup;
+		global $wgLibertyAltAdSetting, $wgLibertyAltAdGroup;
 		$service = MediaWiki\MediaWikiServices::getInstance();
 		$usergroupemanager = $service->getUserGroupManager();
 		$userGroups = $usergroupemanager->getUserGroups( $user );
@@ -46,8 +46,8 @@ class LibertyHooks extends Hooks {
 			'section' => 'liberty/layout',
 		];
 
-		if ( isset( $wgLibertyAdSetting['below'] ) && $wgLibertyAdSetting['below']
-		&& isset( $wgLibertyAdGroup ) && $wgLibertyAdGroup == 'differ' && in_array( 'sysop', $userGroups ) ) {
+		if ( isset( $wgLibertyAltAdSetting['below'] ) && $wgLibertyAltAdSetting['below']
+		&& isset( $wgLibertyAltAdGroup ) && $wgLibertyAltAdGroup == 'differ' && in_array( 'sysop', $userGroups ) ) {
 			$preferences['liberty-layout-morearticle'] = [
 				'type' => 'toggle',
 				'label-message' => 'liberty-pref-layout-morearticle',
