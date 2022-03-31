@@ -26,11 +26,11 @@ class SkinLibertyAlt extends SkinTemplate {
 		$optionMainColor = $user->getOption( 'liberty-color-main' );
 		$optionSecondColor = $user->getOption( 'liberty-color-second' );
 
-		$mainColor = $optionMainColor ? $optionMainColor : $GLOBALS['wgLibertyMainColor'];
+		$mainColor = $optionMainColor ? $optionMainColor : $GLOBALS['wgLibertyAltMainColor'];
 		// @codingStandardsIgnoreLine
-		$tempSecondColor = isset($GLOBALS['wgLibertySecondColor']) ? $GLOBALS['wgLibertySecondColor'] : '#' . strtoupper(dechex(hexdec(substr($mainColor, 1, 6)) - hexdec('1A1415')));
+		$tempSecondColor = isset($GLOBALS['wgLibertyAltSecondColor']) ? $GLOBALS['wgLibertyAltSecondColor'] : '#' . strtoupper(dechex(hexdec(substr($mainColor, 1, 6)) - hexdec('1A1415')));
 		$secondColor = $optionSecondColor ? $optionSecondColor : $tempSecondColor;
-		$ogLogo = isset( $GLOBALS['wgLibertyOgLogo'] ) ? $GLOBALS['wgLibertyOgLogo'] : $wgLogo;
+		$ogLogo = isset( $GLOBALS['wgLibertyAltOgLogo'] ) ? $GLOBALS['wgLibertyAltOgLogo'] : $wgLogo;
 		if ( !preg_match( '/^((?:(?:http(?:s)?)?:)?\/\/(?:.{4,}))$/i', $ogLogo ) ) {
 			$ogLogo = $GLOBALS['wgServer'] . $GLOBALS['wgLogo'];
 		}
