@@ -5,8 +5,8 @@
 		"..."
 	],
 	"url": "https://gitlab.com/librewiki/Liberty-MW-Skin",
-	"descriptionmsg": "liberty-desc",
-	"namemsg": "skinname-liberty",
+	"descriptionmsg": "libertyalt-desc",
+	"namemsg": "skinname-libertyalt",
 	"license-name": "GPL-3.0-or-later",
 	"type": "skin",
 	"version": "1.10.0",
@@ -35,7 +35,7 @@
 		"LibertyAltMaxRecent": 10
 	},
 	"ResourceModules": {
-		"skins.liberty.styles": {
+		"skins.libertyalt.styles": {
 			"class": "ResourceLoaderSkinModule",
 			"styles": {
 				"bootstrap/css/bootstrap.min.css": {
@@ -59,7 +59,7 @@
 				"css/wiki-table.css": {
 					"media": "all"
 				},
-				"css/wikiedittor-liberty.css": {
+				"css/wikiedittor-libertyalt.css": {
 					"media": "all"
 				},
 				"css/extensions/RelatedArticles.css": {
@@ -70,16 +70,16 @@
 				}
 			}
 		},
-		"skins.liberty.ads": {
+		"skins.libertyalt.ads": {
 			"scripts": "js/ads.js"
 		},
-		"skins.liberty.bootstrap": {
+		"skins.libertyalt.bootstrap": {
 			"scripts": [
 				"js/lib/jquery.ba-throttle-debounce.js",
 				"js/lib/bootstrap.min.js"
 			]
 		},
-		"skins.liberty.layoutjs": {
+		"skins.libertyalt.layoutjs": {
 			"scripts": [
 				"js/delay-scrolling.js",
 				"js/disable-notice.js",
@@ -90,12 +90,12 @@
 			],
 			"dependencies": "mediawiki.cookie"
 		},
-		"skins.liberty.liverc": {
+		"skins.libertyalt.liverc": {
 			"scripts": "js/live-recent.js",
-			"messages": [ "liberty-feed-new" ],
+			"messages": [ "libertyalt-feed-new" ],
 			"dependencies": "mediawiki.util"
 		},
-		"skins.liberty.loginjs": {
+		"skins.libertyalt.loginjs": {
 			"scripts": "js/login-request.js",
 			"dependencies": "mediawiki.util"
 		}
@@ -105,7 +105,7 @@
 		"remoteSkinPath": "LibertyAlt"
 	},
 	"ResourceModuleSkinStyles": {
-		"liberty": {
+		"libertyalt": {
 			"+ext.relatedArticles.readMore": "css/extensions/RelatedArticles.css",
 			"+ext.echo.ui": "css/extensions/Echo.css",
 			"+mediawiki.action.view.filepage": "css/skinStyles/mediawiki.action.view.filepage.css",
