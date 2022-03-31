@@ -2,7 +2,7 @@
 // @codingStandardsIgnoreLine
 class SkinLibertyAlt extends SkinTemplate {
 	// @codingStandardsIgnoreStart
-	public $skinname = 'libertyalt';
+	public $skinname = 'liberty';
 	public $stylename = 'Liberty';
 	public $template = 'LibertyTemplate';
 	// @codingStandardsIgnoreEnd
@@ -23,8 +23,8 @@ class SkinLibertyAlt extends SkinTemplate {
 		$userGroups = $usergroupmanager->getUserGroups($user);
 		*/
 
-		$optionMainColor = $user->getOption( 'libertyalt-color-main' );
-		$optionSecondColor = $user->getOption( 'libertyalt-color-second' );
+		$optionMainColor = $user->getOption( 'liberty-color-main' );
+		$optionSecondColor = $user->getOption( 'liberty-color-second' );
 
 		$mainColor = $optionMainColor ? $optionMainColor : $GLOBALS['wgLibertyMainColor'];
 		// @codingStandardsIgnoreLine
@@ -79,24 +79,24 @@ class SkinLibertyAlt extends SkinTemplate {
 		}
 
 		$modules = [
-			'skins.libertyalt.bootstrap',
-			'skins.libertyalt.layoutjs'
+			'skins.liberty.bootstrap',
+			'skins.liberty.layoutjs'
 		];
 
 		// Only load ad-related JS if ads are enabled in site configuration
 		if ( isset( $wgLibertyAltAdSetting['client'] ) && $wgLibertyAltAdSetting['client'] ) {
-			$modules[] = 'skins.libertyalt.ads';
+			$modules[] = 'skins.liberty.ads';
 		}
 
 		// Only load LiveRC JS is we have enabled that feature in site config
 		if ( $wgLibertyAltEnableLiveRC ) {
-			$modules[] = 'skins.libertyalt.liverc';
+			$modules[] = 'skins.liberty.liverc';
 		}
 
 		// Only load modal login JS for anons, no point in loading it for logged-in
 		// users since the modal HTML isn't even rendered for them.
 		if ( $skin->getUser()->isAnon() ) {
-			$modules[] = 'skins.libertyalt.loginjs';
+			$modules[] = 'skins.liberty.loginjs';
 		}
 
 		$out->addModules( $modules );
@@ -105,14 +105,14 @@ class SkinLibertyAlt extends SkinTemplate {
 		$out->addInlineStyle(".Liberty .nav-wrapper,
 		.Liberty .nav-wrapper .navbar .form-inline .btn:hover,
 		.Liberty .nav-wrapper .navbar .form-inline .btn:focus,
-		.Liberty .content-wrapper .libertyalt-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link.active::before,
-		.Liberty .content-wrapper .libertyalt-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:hover::before,
-		.Liberty .content-wrapper .libertyalt-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:focus::before,
-		.Liberty .content-wrapper .libertyalt-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:active::before,
-		.Liberty .content-wrapper .libertyalt-sidebar .live-recent-wrapper .live-recent .live-recent-footer .label,
-		.Liberty .content-wrapper .libertyalt-content .libertyalt-content-header .content-tools .tools-btn:hover,
-		.Liberty .content-wrapper .libertyalt-content .libertyalt-content-header .content-tools .tools-btn:focus,
-		.Liberty .content-wrapper .libertyalt-content .libertyalt-content-header .content-tools .tools-btn:active {
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link.active::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:hover::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:focus::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:active::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-footer .label,
+		.Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn:hover,
+		.Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn:focus,
+		.Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn:active {
 			background-color: $mainColor;
 		}
 
@@ -121,14 +121,14 @@ class SkinLibertyAlt extends SkinTemplate {
 			border-color: $secondColor;
 		}
 
-		.Liberty .content-wrapper .libertyalt-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link.active::before,
-		.Liberty .content-wrapper .libertyalt-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:hover::before,
-		.Liberty .content-wrapper .libertyalt-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:focus::before,
-		.Liberty .content-wrapper .libertyalt-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:active::before {
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link.active::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:hover::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:focus::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:active::before {
 			border-bottom: 2px solid $mainColor;
 		}
 
-		.Liberty .content-wrapper .libertyalt-sidebar .live-recent-wrapper .live-recent .live-recent-footer .label:hover,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-footer .label:hover,
 		.Liberty .nav-wrapper .navbar .navbar-nav .nav-item .nav-link:hover,
 		.Liberty .nav-wrapper .navbar .navbar-nav .nav-item .nav-link:focus,
 		.dropdown-menu .dropdown-item:hover {
@@ -136,18 +136,18 @@ class SkinLibertyAlt extends SkinTemplate {
 		}
 
 
-		.Liberty .content-wrapper #libertyalt-bottombtn,
-		.Liberty .content-wrapper #libertyalt-bottombtn:hover {
+		.Liberty .content-wrapper #liberty-bottombtn,
+		.Liberty .content-wrapper #liberty-bottombtn:hover {
 			background-color: $mainColor;
 		}");
 
 		// layout settings 
 		global $wgLibertyAltUserSidebarSettings;
 
-		$LibertyAltUserWidthSettings = $user->getOption( 'libertyalt-layout-width' );
-		$wgLibertyAltUserSidebarSettings = $user->getOption( 'libertyalt-layout-sidebar' );
-		$LibertyAltUserNavbarSettings = $user->getOption( 'libertyalt-layout-navfix' );
-		$LibertyAltUsercontrolbarSettings = $user->getOption( 'libertyalt-layout-controlbar' );
+		$LibertyAltUserWidthSettings = $user->getOption( 'liberty-layout-width' );
+		$wgLibertyAltUserSidebarSettings = $user->getOption( 'liberty-layout-sidebar' );
+		$LibertyAltUserNavbarSettings = $user->getOption( 'liberty-layout-navfix' );
+		$LibertyAltUsercontrolbarSettings = $user->getOption( 'liberty-layout-controlbar' );
 
 
 		if ( isset( $LibertyAltUserNavbarSettings ) && $LibertyAltUserNavbarSettings ) {
@@ -160,7 +160,7 @@ class SkinLibertyAlt extends SkinTemplate {
 
 		if ( isset( $wgLibertyAltUserSidebarSettings ) && $wgLibertyAltUserSidebarSettings ) {
 			$out->addInlineStyle(
-				".Liberty .content-wrapper .libertyalt-content {
+				".Liberty .content-wrapper .liberty-content {
 					margin-right: 0;
 				}"
 			);
@@ -180,14 +180,14 @@ class SkinLibertyAlt extends SkinTemplate {
 
 		if ( isset($LibertyAltUsercontrolbarSettings ) && $LibertyAltUsercontrolbarSettings ) {
 			$out->addInlineStyle(
-				".Liberty .content-wrapper #libertyalt-bottombtn {
+				".Liberty .content-wrapper #liberty-bottombtn {
 					display: none;
 				}"
 			);
 		};
 
 		// 폰트 설정
-		$LibertyAltUserFontSettings = $user->getOption('libertyalt-font');
+		$LibertyAltUserFontSettings = $user->getOption('liberty-font');
 		if ($LibertyAltUserFontSettings != null) {
 			$out->addInlineStyle(
 				"body, h1, h2, h3, h4, h5, h6, b {
@@ -197,7 +197,7 @@ class SkinLibertyAlt extends SkinTemplate {
 		}
 
 		// Ads setting
-		$LibertyAltUserMoreArticleSettings = $user->getOption('libertyalt-layout-morearticle');
+		$LibertyAltUserMoreArticleSettings = $user->getOption('liberty-layout-morearticle');
 		if (isset($wgLibertyAltAdSetting['client']) && $wgLibertyAltAdSetting['client']) {
 			// if user is login, reduce ads
 			if ( isset($wgLibertyAltAdGroup) && $wgLibertyAltAdGroup == 'differ' && $user->isLoggedIn()) {
@@ -212,34 +212,34 @@ class SkinLibertyAlt extends SkinTemplate {
 			}
 		}
 
-		$LibertyAltDarkCss = "body, .Liberty, .dropdown-menu, .dropdown-item, .Liberty .nav-wrapper .navbar .form-inline .btn, .Liberty .content-wrapper .libertyalt-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link.active, .Liberty .content-wrapper .libertyalt-content .libertyalt-content-main table.wikitable tr > th, .Liberty .content-wrapper .libertyalt-content .libertyalt-content-main table.wikitable tr > td, table.mw_metadata th, .Liberty .content-wrapper .libertyalt-content .libertyalt-content-main table.infobox th, #preferences fieldset:not(.prefsection), #preferences div.mw-prefs-buttons, .navbox, .navbox-subgroup, .navbox > tbody > tr:nth-child(even) > .navbox-list {
+		$LibertyAltDarkCss = "body, .Liberty, .dropdown-menu, .dropdown-item, .Liberty .nav-wrapper .navbar .form-inline .btn, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link.active, .Liberty .content-wrapper .liberty-content .liberty-content-main table.wikitable tr > th, .Liberty .content-wrapper .liberty-content .liberty-content-main table.wikitable tr > td, table.mw_metadata th, .Liberty .content-wrapper .liberty-content .liberty-content-main table.infobox th, #preferences fieldset:not(.prefsection), #preferences div.mw-prefs-buttons, .navbox, .navbox-subgroup, .navbox > tbody > tr:nth-child(even) > .navbox-list {
 			background-color: #000;
 			color: #DDD;
 		}
 
-		.libertyalt-content-header, .libertyalt-footer, .Liberty .content-wrapper .libertyalt-sidebar .live-recent-wrapper .live-recent .live-recent-footer, .Liberty .content-wrapper .libertyalt-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item, .Liberty .content-wrapper .libertyalt-content .libertyalt-content-header, .Liberty .content-wrapper .libertyalt-footer, .editOptions, html .wikiEditor-ui-toolbar, #pagehistory li.selected, .mw-datatable td, .Liberty .content-wrapper .libertyalt-content .libertyalt-content-main table.wikitable tr > td, table.mw_metadata td, .Liberty .content-wrapper .libertyalt-content .libertyalt-content-main table.wikitable, .Liberty .content-wrapper .libertyalt-content .libertyalt-content-main table.infobox, #preferences, .navbox-list, .dropdown-divider {
+		.liberty-content-header, .liberty-footer, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-footer, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item, .Liberty .content-wrapper .liberty-content .liberty-content-header, .Liberty .content-wrapper .liberty-footer, .editOptions, html .wikiEditor-ui-toolbar, #pagehistory li.selected, .mw-datatable td, .Liberty .content-wrapper .liberty-content .liberty-content-main table.wikitable tr > td, table.mw_metadata td, .Liberty .content-wrapper .liberty-content .liberty-content-main table.wikitable, .Liberty .content-wrapper .liberty-content .liberty-content-main table.infobox, #preferences, .navbox-list, .dropdown-divider {
 			background-color: #1F2023;
 			color: #DDD;
 		}
 
-		.Liberty .content-wrapper .libertyalt-content .libertyalt-content-main, .mw-datatable th, .mw-datatable tr:hover td, textarea, .Liberty .content-wrapper .libertyalt-sidebar .live-recent-wrapper .live-recent .live-recent-content, div.mw-warning-with-logexcerpt, div.mw-lag-warn-high, div.mw-cascadeprotectedwarning, div#mw-protect-cascadeon {
+		.Liberty .content-wrapper .liberty-content .liberty-content-main, .mw-datatable th, .mw-datatable tr:hover td, textarea, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-content, div.mw-warning-with-logexcerpt, div.mw-lag-warn-high, div.mw-cascadeprotectedwarning, div#mw-protect-cascadeon {
 			background-color: #000;
 		}
 
-		.Liberty .content-wrapper .libertyalt-content .libertyalt-content-header .title>h1, .Liberty .content-wrapper .libertyalt-sidebar .live-recent-wrapper .live-recent .live-recent-content .live-recent-list .recent-item, caption { color: #DDD; }
+		.Liberty .content-wrapper .liberty-content .liberty-content-header .title>h1, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-content .live-recent-list .recent-item, caption { color: #DDD; }
 
 		.btn-secondary { background: transparent; color: #DDD; }
 
 		#pagehistory li { border: 0; }
 
-		.Liberty .content-wrapper .libertyalt-footer, .Liberty .content-wrapper .libertyalt-content .libertyalt-content-header, .Liberty .content-wrapper .libertyalt-content .libertyalt-content-main, .Liberty .content-wrapper .libertyalt-sidebar .live-recent-wrapper .live-recent .live-recent-footer, .Liberty .content-wrapper .libertyalt-sidebar .live-recent-wrapper .live-recent .live-recent-content, .Liberty .content-wrapper .libertyalt-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item, .Liberty .content-wrapper .libertyalt-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item + .nav-item, .Liberty .content-wrapper .libertyalt-content .libertyalt-content-header .content-tools .tools-btn:hover, .Liberty .content-wrapper .libertyalt-content .libertyalt-content-header .content-tools .tools-btn:focus, .Liberty .content-wrapper .libertyalt-content .libertyalt-content-header .content-tools .tools-btn, .dropdown-menu, .dropdown-divider, .Liberty .content-wrapper .libertyalt-content .libertyalt-content-main fieldset, hr, .Liberty .content-wrapper .libertyalt-sidebar .live-recent-wrapper .live-recent .live-recent-content .live-recent-list li, .mw-changeslist-legend, .Liberty .content-wrapper .libertyalt-content .libertyalt-content-header .content-tools { border-color: #555; }
+		.Liberty .content-wrapper .liberty-footer, .Liberty .content-wrapper .liberty-content .liberty-content-header, .Liberty .content-wrapper .liberty-content .liberty-content-main, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-footer, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-content, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item + .nav-item, .Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn:hover, .Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn:focus, .Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn, .dropdown-menu, .dropdown-divider, .Liberty .content-wrapper .liberty-content .liberty-content-main fieldset, hr, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-content .live-recent-list li, .mw-changeslist-legend, .Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools { border-color: #555; }
 
-		.flow-post, .Liberty .content-wrapper .libertyalt-content .libertyalt-content-main .toc .toctext { color: #DDD; }
+		.flow-post, .Liberty .content-wrapper .liberty-content .liberty-content-main .toc .toctext { color: #DDD; }
 		.flow-topic-titlebar { color: #000; }
 		.flow-ui-navigationWidget { color: #FFF; }
-		.Liberty .content-wrapper .libertyalt-content .libertyalt-content-main .toccolours, .Liberty .content-wrapper .libertyalt-content .libertyalt-content-main .toc ul, .Liberty .content-wrapper .libertyalt-content .libertyalt-content-main .toc li { background-color: #000; }
-		.Liberty .content-wrapper .libertyalt-content .libertyalt-content-main .toc .toctitle { background-color: #1F2023; }";
-		$LibertyAltUserDarkSetting = $user->getOption('libertyalt-dark');;
+		.Liberty .content-wrapper .liberty-content .liberty-content-main .toccolours, .Liberty .content-wrapper .liberty-content .liberty-content-main .toc ul, .Liberty .content-wrapper .liberty-content .liberty-content-main .toc li { background-color: #000; }
+		.Liberty .content-wrapper .liberty-content .liberty-content-main .toc .toctitle { background-color: #1F2023; }";
+		$LibertyAltUserDarkSetting = $user->getOption('liberty-dark');;
 		if ($LibertyAltUserDarkSetting === 'dark') {
 			$out->addInlineStyle($LibertyAltDarkCss);
 		} elseif ($LibertyAltUserDarkSetting === null) {
@@ -279,7 +279,7 @@ class SkinLibertyAlt extends SkinTemplate {
 			// @codingStandardsIgnoreLine
 			'<script async src="https://unpkg.com/share-api-polyfill/dist/share-min.js"></script>'
 		);
-		$out->addModuleStyles( [ 'skins.libertyalt.styles' ] );
+		$out->addModuleStyles( [ 'skins.liberty.styles' ] );
 	}
 
 	/**
