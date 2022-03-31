@@ -1,110 +1,110 @@
 /* Max-width: 1023 Desktop deadline */
 @media screen and (max-width: 1023px) {
-	.LibertyAlt .nav-wrapper .navbar {
+	.Liberty .nav-wrapper .navbar {
 		padding: 0 0.5rem;
 	}
 
-	.LibertyAlt .nav-wrapper .navbar .form-inline {
+	.Liberty .nav-wrapper .navbar .form-inline {
 		float: left;
 		padding: 0;
 		padding-top: 0.25rem;
 		padding-bottom: 0.5rem;
 	}
 
-	.LibertyAlt .nav-wrapper .navbar .form-inline .input-group {
+	.Liberty .nav-wrapper .navbar .form-inline .input-group {
 		display: table;
 		width: 100%;
 	}
 
-	.LibertyAlt .nav-wrapper .navbar .form-inline .input-group .form-control {
+	.Liberty .nav-wrapper .navbar .form-inline .input-group .form-control {
 		width: 100%;
 	}
 
-	.LibertyAlt .nav-wrapper .navbar .form-inline .input-group .input-group-btn {
+	.Liberty .nav-wrapper .navbar .form-inline .input-group .input-group-btn {
 		width: 1%;
 	}
 
-	.LibertyAlt .content-wrapper {
+	.Liberty .content-wrapper {
 		margin-top: 5.89rem;
 	}
 
-	.LibertyAlt .content-wrapper .liberty-sidebar {
+	.Liberty .content-wrapper .liberty-sidebar {
 		display: none;
 	}
 
-	.LibertyAlt .content-wrapper .liberty-content {
+	.Liberty .content-wrapper .liberty-content {
 		margin-right: auto;
 		padding-bottom: 0.5rem;
 	}
 
-	.LibertyAlt .content-wrapper .liberty-content .liberty-content-header .liberty-notice {
+	.Liberty .content-wrapper .liberty-content .liberty-content-header .liberty-notice {
 		margin: 0.5rem;
 	}
 
-	.LibertyAlt .content-wrapper .liberty-content .liberty-content-header .content-tools {
+	.Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools {
 		float: none;
 		text-align: right;
 		border-bottom: 1px solid #e1e8ed;
 		padding: 0.5rem;
 	}
 
-	.LibertyAlt .content-wrapper .liberty-content .liberty-content-header .title {
+	.Liberty .content-wrapper .liberty-content .liberty-content-header .title {
 		padding: 0.5rem;
 	}
 
-	.LibertyAlt .content-wrapper .liberty-content .liberty-content-header .contentSub {
+	.Liberty .content-wrapper .liberty-content .liberty-content-header .contentSub {
 		margin-top: -0.25rem;
 		padding: 0.5rem;
 		padding-top: 0;
 	}
 
-	.LibertyAlt .content-wrapper .liberty-content .liberty-content-header .header-ads {
+	.Liberty .content-wrapper .liberty-content .liberty-content-header .header-ads {
 		margin: 0.5rem;
 		margin-bottom: 0;
 	}
 
-	.LibertyAlt .content-wrapper .liberty-content .liberty-content-main {
+	.Liberty .content-wrapper .liberty-content .liberty-content-main {
 		padding: 0.5rem;
 	}
 
-	.LibertyAlt .content-wrapper .liberty-content .liberty-content-main #upload-div {
+	.Liberty .content-wrapper .liberty-content .liberty-content-main #upload-div {
 		display: none;
 	}
 
-	.LibertyAlt .content-wrapper .liberty-content .liberty-content-main iframe {
+	.Liberty .content-wrapper .liberty-content .liberty-content-main iframe {
 		width: 80%;
 		height: 30rem;
 	}
 
-	.LibertyAlt .content-wrapper .liberty-content .liberty-content-main .mobile-table-wrapper {
+	.Liberty .content-wrapper .liberty-content .liberty-content-main .mobile-table-wrapper {
 		overflow-x: auto;
 	}
 
-	.LibertyAlt .content-wrapper .liberty-content .bottom-ads {
+	.Liberty .content-wrapper .liberty-content .bottom-ads {
 		padding: 0.5rem;
 		background-color: #fff;
 		border-left: 1px solid #e1e8ed;
 		border-right: 1px solid #e1e8ed;
 	}
 
-	.LibertyAlt .content-wrapper .liberty-footer {
+	.Liberty .content-wrapper .liberty-footer {
 		padding: 0.5rem;
 	}
 }
 /* Max-width: 890 convert for tablet mode alt */
 @media screen and (max-width: 890px) {
-	.LibertyAlt .nav-wrapper .navbar .navbar-nav .nav-item .fa,
-	.LibertyAlt .nav-wrapper .navbar .navbar-nav .nav-item .fas,
-	.LibertyAlt .nav-wrapper .navbar .navbar-nav .nav-item .far {
+	.Liberty .nav-wrapper .navbar .navbar-nav .nav-item .fa,
+	.Liberty .nav-wrapper .navbar .navbar-nav .nav-item .fas,
+	.Liberty .nav-wrapper .navbar .navbar-nav .nav-item .far {
 		text-align: center;
 		margin: 0 0.25rem;
 	}
 
-	.LibertyAlt .nav-wrapper .navbar .navbar-nav .nav-item .nav-link .hide-title {
+	.Liberty .nav-wrapper .navbar .navbar-nav .nav-item .nav-link .hide-title {
 		display: none;
 	}
 
-	.LibertyAlt .content-wrapper .liberty-content .liberty-content-main iframe {
+	.Liberty .content-wrapper .liberty-content .liberty-content-main iframe {
 		width: 90%;
 		height: 20rem;
 	}
@@ -114,18 +114,18 @@
 }
 /* Max-width: 798 Menu deadline, convert for tablet mode */
 @media screen and (max-width: 798px) {
-	.LibertyAlt .nav-wrapper .navbar .navbar-nav .nav-item .fa,
-	.LibertyAlt .nav-wrapper .navbar .navbar-nav .nav-item .fas,
-	.LibertyAlt .nav-wrapper .navbar .navbar-nav .nav-item .far {
+	.Liberty .nav-wrapper .navbar .navbar-nav .nav-item .fa,
+	.Liberty .nav-wrapper .navbar .navbar-nav .nav-item .fas,
+	.Liberty .nav-wrapper .navbar .navbar-nav .nav-item .far {
 		text-align: center;
 		margin: 0 0.25rem;
 	}
 
-	.LibertyAlt .nav-wrapper .navbar .navbar-nav .nav-item .nav-link .hide-title {
+	.Liberty .nav-wrapper .navbar .navbar-nav .nav-item .nav-link .hide-title {
 		display: none;
 	}
 
-	.LibertyAlt .content-wrapper .liberty-content .liberty-content-main iframe {
+	.Liberty .content-wrapper .liberty-content .liberty-content-main iframe {
 		width: 90%;
 		height: 20rem;
 	}
@@ -133,27 +133,27 @@
 }
 /* Max-width: 520px Under tablet */
 @media screen and (max-width: 520px) {
-	.LibertyAlt .nav-wrapper .navbar .navbar-nav .nav-item .nav-link {
+	.Liberty .nav-wrapper .navbar .navbar-nav .nav-item .nav-link {
 		padding: 0.7rem 0.3rem;
 	}
 
-	.LibertyAlt .nav-wrapper .navbar .navbar-login .view-logout {
+	.Liberty .nav-wrapper .navbar .navbar-login .view-logout {
 		display: block;
 	}
 
-	.LibertyAlt .nav-wrapper .navbar .navbar-login .hide-logout {
+	.Liberty .nav-wrapper .navbar .navbar-login .hide-logout {
 		display: none;
 	}
 
-	html .LibertyAlt .content-wrapper .liberty-content .liberty-content-main table.infobox,
-	html .LibertyAlt .content-wrapper .liberty-content .liberty-content-main table.wikitable {
+	html .Liberty .content-wrapper .liberty-content .liberty-content-main table.infobox,
+	html .Liberty .content-wrapper .liberty-content .liberty-content-main table.wikitable {
 		float: none;
 		width: 100%;
 		margin: auto;
 		margin-bottom: 1rem;
 	}
 
-	.LibertyAlt .content-wrapper .liberty-content .liberty-content-main iframe {
+	.Liberty .content-wrapper .liberty-content .liberty-content-main iframe {
 		width: 100%;
 		height: 15rem;
 	}
@@ -165,35 +165,35 @@
 
 /* Max-width: 397px Under Big-phone */
 @media screen and (max-width: 397px) {
-	.LibertyAlt .nav-wrapper .navbar .navbar-brand {
+	.Liberty .nav-wrapper .navbar .navbar-brand {
 		width: 5rem;
 		background: transparent url( ../img/logo_alt.png ) no-repeat scroll left center/auto 1.5rem;
 	}
 
-	.LibertyAlt .nav-wrapper .navbar .navbar-nav .nav-item .nav-link::after {
+	.Liberty .nav-wrapper .navbar .navbar-nav .nav-item .nav-link::after {
 		display: none;
 	}
 
-	.LibertyAlt .nav-wrapper .navbar .navbar-nav .nav-item .nav-link {
+	.Liberty .nav-wrapper .navbar .navbar-nav .nav-item .nav-link {
 		padding: 0.7rem 0.2rem;
 	}
 
-	.LibertyAlt .nav-wrapper .navbar .navbar-login {
+	.Liberty .nav-wrapper .navbar .navbar-login {
 		padding-left: 0.4rem;
 	}
 
-	.LibertyAlt .nav-wrapper .navbar .navbar-notification {
+	.Liberty .nav-wrapper .navbar .navbar-notification {
 		padding-left: 0.4rem;
 	}
 
-	.LibertyAlt .nav-wrapper .navbar .form-inline {
+	.Liberty .nav-wrapper .navbar .form-inline {
 		padding-top: 0.04rem;
 	}
 }
 
 /* Max-width: 34rem; */
 @media screen and (max-width: 34rem) {
-	.LibertyAlt .login-modal .modal-sm {
+	.Liberty .login-modal .modal-sm {
 		width: auto;
 	}
 }

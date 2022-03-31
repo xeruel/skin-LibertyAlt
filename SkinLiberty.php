@@ -102,42 +102,42 @@ class SkinLibertyAlt extends SkinTemplate {
 		$out->addModules( $modules );
 
 		// @codingStandardsIgnoreStart
-		$out->addInlineStyle(".LibertyAlt .nav-wrapper,
-		.LibertyAlt .nav-wrapper .navbar .form-inline .btn:hover,
-		.LibertyAlt .nav-wrapper .navbar .form-inline .btn:focus,
-		.LibertyAlt .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link.active::before,
-		.LibertyAlt .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:hover::before,
-		.LibertyAlt .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:focus::before,
-		.LibertyAlt .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:active::before,
-		.LibertyAlt .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-footer .label,
-		.LibertyAlt .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn:hover,
-		.LibertyAlt .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn:focus,
-		.LibertyAlt .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn:active {
+		$out->addInlineStyle(".Liberty .nav-wrapper,
+		.Liberty .nav-wrapper .navbar .form-inline .btn:hover,
+		.Liberty .nav-wrapper .navbar .form-inline .btn:focus,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link.active::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:hover::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:focus::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:active::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-footer .label,
+		.Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn:hover,
+		.Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn:focus,
+		.Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn:active {
 			background-color: $mainColor;
 		}
 
-		.LibertyAlt .nav-wrapper .navbar .form-inline .btn:hover,
-		.LibertyAlt .nav-wrapper .navbar .form-inline .btn:focus {
+		.Liberty .nav-wrapper .navbar .form-inline .btn:hover,
+		.Liberty .nav-wrapper .navbar .form-inline .btn:focus {
 			border-color: $secondColor;
 		}
 
-		.LibertyAlt .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link.active::before,
-		.LibertyAlt .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:hover::before,
-		.LibertyAlt .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:focus::before,
-		.LibertyAlt .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:active::before {
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link.active::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:hover::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:focus::before,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link:active::before {
 			border-bottom: 2px solid $mainColor;
 		}
 
-		.LibertyAlt .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-footer .label:hover,
-		.LibertyAlt .nav-wrapper .navbar .navbar-nav .nav-item .nav-link:hover,
-		.LibertyAlt .nav-wrapper .navbar .navbar-nav .nav-item .nav-link:focus,
+		.Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-footer .label:hover,
+		.Liberty .nav-wrapper .navbar .navbar-nav .nav-item .nav-link:hover,
+		.Liberty .nav-wrapper .navbar .navbar-nav .nav-item .nav-link:focus,
 		.dropdown-menu .dropdown-item:hover {
 			background-color: $secondColor;
 		}
 
 
-		.LibertyAlt .content-wrapper #liberty-bottombtn,
-		.LibertyAlt .content-wrapper #liberty-bottombtn:hover {
+		.Liberty .content-wrapper #liberty-bottombtn,
+		.Liberty .content-wrapper #liberty-bottombtn:hover {
 			background-color: $mainColor;
 		}");
 
@@ -160,7 +160,7 @@ class SkinLibertyAlt extends SkinTemplate {
 
 		if ( isset( $wgLibertyAltUserSidebarSettings ) && $wgLibertyAltUserSidebarSettings ) {
 			$out->addInlineStyle(
-				".LibertyAlt .content-wrapper .liberty-content {
+				".Liberty .content-wrapper .liberty-content {
 					margin-right: 0;
 				}"
 			);
@@ -168,11 +168,11 @@ class SkinLibertyAlt extends SkinTemplate {
 
 		if ( $LibertyAltUserWidthSettings != null ) {
 			$out->addInlineStyle(
-				".LibertyAlt .content-wrapper {
+				".Liberty .content-wrapper {
 					max-width: $LibertyAltUserWidthSettings;
 				}
 
-				.LibertyAlt .nav-wrapper .navbar {
+				.Liberty .nav-wrapper .navbar {
 					max-width: $LibertyAltUserWidthSettings;
 				}"
 			);
@@ -180,7 +180,7 @@ class SkinLibertyAlt extends SkinTemplate {
 
 		if ( isset($LibertyAltUsercontrolbarSettings ) && $LibertyAltUsercontrolbarSettings ) {
 			$out->addInlineStyle(
-				".LibertyAlt .content-wrapper #liberty-bottombtn {
+				".Liberty .content-wrapper #liberty-bottombtn {
 					display: none;
 				}"
 			);
@@ -212,33 +212,33 @@ class SkinLibertyAlt extends SkinTemplate {
 			}
 		}
 
-		$LibertyAltDarkCss = "body, .LibertyAlt, .dropdown-menu, .dropdown-item, .LibertyAlt .nav-wrapper .navbar .form-inline .btn, .LibertyAlt .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link.active, .LibertyAlt .content-wrapper .liberty-content .liberty-content-main table.wikitable tr > th, .LibertyAlt .content-wrapper .liberty-content .liberty-content-main table.wikitable tr > td, table.mw_metadata th, .LibertyAlt .content-wrapper .liberty-content .liberty-content-main table.infobox th, #preferences fieldset:not(.prefsection), #preferences div.mw-prefs-buttons, .navbox, .navbox-subgroup, .navbox > tbody > tr:nth-child(even) > .navbox-list {
+		$LibertyAltDarkCss = "body, .Liberty, .dropdown-menu, .dropdown-item, .Liberty .nav-wrapper .navbar .form-inline .btn, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item .nav-link.active, .Liberty .content-wrapper .liberty-content .liberty-content-main table.wikitable tr > th, .Liberty .content-wrapper .liberty-content .liberty-content-main table.wikitable tr > td, table.mw_metadata th, .Liberty .content-wrapper .liberty-content .liberty-content-main table.infobox th, #preferences fieldset:not(.prefsection), #preferences div.mw-prefs-buttons, .navbox, .navbox-subgroup, .navbox > tbody > tr:nth-child(even) > .navbox-list {
 			background-color: #000;
 			color: #DDD;
 		}
 
-		.liberty-content-header, .liberty-footer, .LibertyAlt .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-footer, .LibertyAlt .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item, .LibertyAlt .content-wrapper .liberty-content .liberty-content-header, .LibertyAlt .content-wrapper .liberty-footer, .editOptions, html .wikiEditor-ui-toolbar, #pagehistory li.selected, .mw-datatable td, .LibertyAlt .content-wrapper .liberty-content .liberty-content-main table.wikitable tr > td, table.mw_metadata td, .LibertyAlt .content-wrapper .liberty-content .liberty-content-main table.wikitable, .LibertyAlt .content-wrapper .liberty-content .liberty-content-main table.infobox, #preferences, .navbox-list, .dropdown-divider {
+		.liberty-content-header, .liberty-footer, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-footer, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item, .Liberty .content-wrapper .liberty-content .liberty-content-header, .Liberty .content-wrapper .liberty-footer, .editOptions, html .wikiEditor-ui-toolbar, #pagehistory li.selected, .mw-datatable td, .Liberty .content-wrapper .liberty-content .liberty-content-main table.wikitable tr > td, table.mw_metadata td, .Liberty .content-wrapper .liberty-content .liberty-content-main table.wikitable, .Liberty .content-wrapper .liberty-content .liberty-content-main table.infobox, #preferences, .navbox-list, .dropdown-divider {
 			background-color: #1F2023;
 			color: #DDD;
 		}
 
-		.LibertyAlt .content-wrapper .liberty-content .liberty-content-main, .mw-datatable th, .mw-datatable tr:hover td, textarea, .LibertyAlt .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-content, div.mw-warning-with-logexcerpt, div.mw-lag-warn-high, div.mw-cascadeprotectedwarning, div#mw-protect-cascadeon {
+		.Liberty .content-wrapper .liberty-content .liberty-content-main, .mw-datatable th, .mw-datatable tr:hover td, textarea, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-content, div.mw-warning-with-logexcerpt, div.mw-lag-warn-high, div.mw-cascadeprotectedwarning, div#mw-protect-cascadeon {
 			background-color: #000;
 		}
 
-		.LibertyAlt .content-wrapper .liberty-content .liberty-content-header .title>h1, .LibertyAlt .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-content .live-recent-list .recent-item, caption { color: #DDD; }
+		.Liberty .content-wrapper .liberty-content .liberty-content-header .title>h1, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-content .live-recent-list .recent-item, caption { color: #DDD; }
 
 		.btn-secondary { background: transparent; color: #DDD; }
 
 		#pagehistory li { border: 0; }
 
-		.LibertyAlt .content-wrapper .liberty-footer, .LibertyAlt .content-wrapper .liberty-content .liberty-content-header, .LibertyAlt .content-wrapper .liberty-content .liberty-content-main, .LibertyAlt .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-footer, .LibertyAlt .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-content, .LibertyAlt .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item, .LibertyAlt .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item + .nav-item, .LibertyAlt .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn:hover, .LibertyAlt .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn:focus, .LibertyAlt .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn, .dropdown-menu, .dropdown-divider, .LibertyAlt .content-wrapper .liberty-content .liberty-content-main fieldset, hr, .LibertyAlt .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-content .live-recent-list li, .mw-changeslist-legend, .LibertyAlt .content-wrapper .liberty-content .liberty-content-header .content-tools { border-color: #555; }
+		.Liberty .content-wrapper .liberty-footer, .Liberty .content-wrapper .liberty-content .liberty-content-header, .Liberty .content-wrapper .liberty-content .liberty-content-main, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-footer, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-content, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-header .nav .nav-item + .nav-item, .Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn:hover, .Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn:focus, .Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools .tools-btn, .dropdown-menu, .dropdown-divider, .Liberty .content-wrapper .liberty-content .liberty-content-main fieldset, hr, .Liberty .content-wrapper .liberty-sidebar .live-recent-wrapper .live-recent .live-recent-content .live-recent-list li, .mw-changeslist-legend, .Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools { border-color: #555; }
 
-		.flow-post, .LibertyAlt .content-wrapper .liberty-content .liberty-content-main .toc .toctext { color: #DDD; }
+		.flow-post, .Liberty .content-wrapper .liberty-content .liberty-content-main .toc .toctext { color: #DDD; }
 		.flow-topic-titlebar { color: #000; }
 		.flow-ui-navigationWidget { color: #FFF; }
-		.LibertyAlt .content-wrapper .liberty-content .liberty-content-main .toccolours, .LibertyAlt .content-wrapper .liberty-content .liberty-content-main .toc ul, .LibertyAlt .content-wrapper .liberty-content .liberty-content-main .toc li { background-color: #000; }
-		.LibertyAlt .content-wrapper .liberty-content .liberty-content-main .toc .toctitle { background-color: #1F2023; }";
+		.Liberty .content-wrapper .liberty-content .liberty-content-main .toccolours, .Liberty .content-wrapper .liberty-content .liberty-content-main .toc ul, .Liberty .content-wrapper .liberty-content .liberty-content-main .toc li { background-color: #000; }
+		.Liberty .content-wrapper .liberty-content .liberty-content-main .toc .toctitle { background-color: #1F2023; }";
 		$LibertyAltUserDarkSetting = $user->getOption('liberty-dark');;
 		if ($LibertyAltUserDarkSetting === 'dark') {
 			$out->addInlineStyle($LibertyAltDarkCss);
