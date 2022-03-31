@@ -1,5 +1,5 @@
 {
-	"name": "LibertyAlt",
+	"name": "Liberty",
 	"author": [
 		"Librewiki developers",
 		"..."
@@ -14,7 +14,7 @@
 		"MediaWiki": ">= 1.35.0"
 	},
 	"ValidSkinNames": {
-		"libertyalt": "LibertyAlt"
+		"liberty": "Liberty"
 	},
 	"MessagesDirs": {
 		"Liberty": [
