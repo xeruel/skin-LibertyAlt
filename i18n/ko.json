@@ -49,7 +49,7 @@
 	"libertyalt-view-more": "더 보기",
 	"libertyalt.css": "/* 이 CSS 설정은 리버티 스킨을 사용하는 사용자에게 적용됩니다 */",
 	"libertyalt.js": "/* 이 자바스크립트 설정은 리버티 스킨을 사용하는 사용자에게 적용됩니다 */",
-	"prefs-libertyalt": "리버티 스킨",
+	"prefs-libertyalt": "리버티 얼터네이티브 스킨",
 	"prefs-color": "색상 설정",
 	"prefs-layout": "레이아웃 설정",
 	"libertyalt-pref-layout-navfix": "고정형 내비게이션 바 해제",

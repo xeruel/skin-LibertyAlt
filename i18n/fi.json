@@ -45,7 +45,7 @@
 	"libertyalt-view-more": "Katso lisää",
 	"libertyalt.css": "/* Tämä sivu sisältää Vapaus-ulkoasua muuttavia tyylejä */",
 	"libertyalt.js": "/* Tämän sivun JavaScript-koodi liitetään Vapaus-tyyliin */",
-	"prefs-libertyalt": "Vapaus-ulkoasu",
+	"prefs-libertyalt": "Vapaus-Alternative-ulkoasu",
 	"prefs-color": "Väriasetus",
 	"prefs-layout": "Asetteluasetukset",
 	"libertyalt-pref-layout-sidebar": "Poista oikea sivupalkki",

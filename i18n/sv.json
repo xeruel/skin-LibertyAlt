@@ -48,7 +48,7 @@
 	"libertyalt-view-more": "Visa mer",
 	"libertyalt.css": "/* CSS som skrivs här kommer att påverka alla användare av utseendet Liberty */",
 	"libertyalt.js": "/* All JavaScript här kommer att läsas in för de som använder utseendet Liberty */",
-	"prefs-libertyalt": "Utseendet Liberty",
+	"prefs-libertyalt": "Utseendet Liberty Alternative",
 	"prefs-color": "Färginställning",
 	"prefs-layout": "Layoutinställning",
 	"libertyalt-pref-layout-navfix": "Inaktivera statiskt navigeringsfält",

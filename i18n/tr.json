@@ -48,7 +48,7 @@
 	"libertyalt-view-more": "Daha fazla göster",
 	"libertyalt.css": "/* Buraya yerleştirilen CSS, Liberty görünümün kullanıcılarını etkileyecektir */",
 	"libertyalt.js": "/* Buradaki herhangi bir JavaScript, Liberty görünümü kullanan kullanıcılar için yüklenecek */",
-	"prefs-libertyalt": "Liberty görünümü",
+	"prefs-libertyalt": "Liberty Alternative görünümü",
 	"prefs-color": "Renk ayarı",
 	"prefs-layout": "Yerleşim ayarı",
 	"libertyalt-pref-layout-navfix": "Sabit gezinti çubuğu kapalı",

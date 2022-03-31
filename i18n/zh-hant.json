@@ -46,7 +46,7 @@
 	"libertyalt-view-more": "檢視更多",
 	"libertyalt.css": "/* 此處的CSS會影響使用Liberty外觀的使用者 */",
 	"libertyalt.js": "/* 任何此處的JavaScript都會在使用者使用Liberty外觀時載入 */",
-	"prefs-libertyalt": "Liberty外觀",
+	"prefs-libertyalt": "Liberty Alternative外觀",
 	"prefs-color": "色彩設定",
 	"prefs-layout": "版型設定",
 	"libertyalt-pref-layout-navfix": "關閉靜態導覽列",

@@ -52,7 +52,7 @@
 	"libertyalt-view-more": "Afficher plus",
 	"libertyalt.css": "/* Le CSS placé ici affectera les utilisateurs de l’habillage Liberté */",
 	"libertyalt.js": "/* Tout JavaScript ici sera chargé avec les pages accédées par les utilisateurs de l’habillage Liberté */",
-	"prefs-libertyalt": "Habillage Liberté",
+	"prefs-libertyalt": "Habillage Liberté Alternative",
 	"prefs-color": "Paramètres de couleurs",
 	"prefs-layout": "Paramètre de mise en page",
 	"libertyalt-pref-layout-navfix": "Hors barre de navigation statique",

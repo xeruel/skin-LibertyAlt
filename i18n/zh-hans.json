@@ -50,7 +50,7 @@
 	"libertyalt-view-more": "查看更多",
 	"libertyalt.css": "/* 这里放置的CSS将影响使用Liberty皮肤的用户 */",
 	"libertyalt.js": "/* 这里的任何JavaScript将为使用Liberty皮肤的用户加载 */",
-	"prefs-libertyalt": "Liberty皮肤",
+	"prefs-libertyalt": "Liberty Alternative皮肤",
 	"prefs-color": "颜色设置",
 	"prefs-layout": "布局设置",
 	"libertyalt-pref-layout-navfix": "关闭静态导航栏",
