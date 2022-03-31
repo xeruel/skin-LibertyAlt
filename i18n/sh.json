@@ -4,16 +4,16 @@
 			"Vlad5250"
 		]
 	},
-	"liberty-feed-new": "[Novo]",
-	"liberty-forgot-pw": "Zaboravili ste lozinku?",
-	"liberty-login": "Prijava",
-	"liberty-login-alter": "Prijva ostalim metodama",
-	"liberty-login-btn": "Prijava",
-	"liberty-info": "Info",
-	"liberty-purge": "Preučitaj",
-	"liberty-recent-discussions": "Nedavne diskusije",
-	"liberty-remember": "Zapamti me",
-	"liberty-tooltip-purge": "Očistiti međuspremnik ove stranice.",
-	"liberty-pref-fonts-helplabel": "Pomoć",
-	"liberty-pref-fonts-help": "Font će se učitati s drugog mjesta (osim Malgun Gothic)."
+	"libertyalt-feed-new": "[Novo]",
+	"libertyalt-forgot-pw": "Zaboravili ste lozinku?",
+	"libertyalt-login": "Prijava",
+	"libertyalt-login-alter": "Prijva ostalim metodama",
+	"libertyalt-login-btn": "Prijava",
+	"libertyalt-info": "Info",
+	"libertyalt-purge": "Preučitaj",
+	"libertyalt-recent-discussions": "Nedavne diskusije",
+	"libertyalt-remember": "Zapamti me",
+	"libertyalt-tooltip-purge": "Očistiti međuspremnik ove stranice.",
+	"libertyalt-pref-fonts-helplabel": "Pomoć",
+	"libertyalt-pref-fonts-help": "Font će se učitati s drugog mjesta (osim Malgun Gothic)."
 }

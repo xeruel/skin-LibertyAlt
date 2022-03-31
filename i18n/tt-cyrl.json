@@ -4,16 +4,16 @@
 			"Ерней"
 		]
 	},
-	"liberty-feed-new": "[Яңа]",
-	"liberty-forgot-pw": "Серсүзегезне оныттыгызмы?",
-	"liberty-login": "Керү",
-	"liberty-login-btn": "Керү",
-	"liberty-info": "Мәгълүмат",
-	"liberty-recent-discussions": "Соңгы фикер алышулар",
-	"prefs-liberty": "Liberty бизәлеше",
+	"libertyalt-feed-new": "[Яңа]",
+	"libertyalt-forgot-pw": "Серсүзегезне оныттыгызмы?",
+	"libertyalt-login": "Керү",
+	"libertyalt-login-btn": "Керү",
+	"libertyalt-info": "Мәгълүмат",
+	"libertyalt-recent-discussions": "Соңгы фикер алышулар",
+	"prefs-libertyalt": "Liberty бизәлеше",
 	"prefs-color": "Төс көйләнмәләре",
-	"liberty-pref-color-main": "Төп төс",
-	"liberty-pref-color-second": "Икенчел төс",
+	"libertyalt-pref-color-main": "Төп төс",
+	"libertyalt-pref-color-second": "Икенчел төс",
 	"prefs-font": "Хәрефләр көйләнмәләре",
-	"liberty-pref-fonts-helplabel": "Белешмә"
+	"libertyalt-pref-fonts-helplabel": "Белешмә"
 }
