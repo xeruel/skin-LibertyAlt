@@ -14,7 +14,7 @@ class SkinLibertyAlt extends SkinTemplate {
 	 */
 	public function initPage( OutputPage $out ) {
 		// @codingStandardsIgnoreLine
-		global $wgSitename, $wgTwitterAccount, $wgLanguageCode, $wgNaverVerification, $wgLogo, $wgLibertyEnableLiveRC, $wgLibertyAdSetting, $wgLibertyAdGroup;
+		global $wgSitename, $wgTwitterAccount, $wgLanguageCode, $wgNaverVerification, $wgLogo, $wgLibertyAltEnableLiveRC, $wgLibertyAltAdSetting, $wgLibertyAltAdGroup;
 
 		$user = $this->getUser();
 		/* uncomment if needs to use UserGroupManager
@@ -84,12 +84,12 @@ class SkinLibertyAlt extends SkinTemplate {
 		];
 
 		// Only load ad-related JS if ads are enabled in site configuration
-		if ( isset( $wgLibertyAdSetting['client'] ) && $wgLibertyAdSetting['client'] ) {
+		if ( isset( $wgLibertyAltAdSetting['client'] ) && $wgLibertyAltAdSetting['client'] ) {
 			$modules[] = 'skins.liberty.ads';
 		}
 
 		// Only load LiveRC JS is we have enabled that feature in site config
-		if ( $wgLibertyEnableLiveRC ) {
+		if ( $wgLibertyAltEnableLiveRC ) {
 			$modules[] = 'skins.liberty.liverc';
 		}
 
@@ -142,10 +142,10 @@ class SkinLibertyAlt extends SkinTemplate {
 		}");
 
 		// layout settings 
-		global $wgLibertyUserSidebarSettings;
+		global $wgLibertyAltUserSidebarSettings;
 
 		$LibertyAltUserWidthSettings = $user->getOption( 'liberty-layout-width' );
-		$wgLibertyUserSidebarSettings = $user->getOption( 'liberty-layout-sidebar' );
+		$wgLibertyAltUserSidebarSettings = $user->getOption( 'liberty-layout-sidebar' );
 		$LibertyAltUserNavbarSettings = $user->getOption( 'liberty-layout-navfix' );
 		$LibertyAltUsercontrolbarSettings = $user->getOption( 'liberty-layout-controlbar' );
 
@@ -158,7 +158,7 @@ class SkinLibertyAlt extends SkinTemplate {
 			);
 		};
 
-		if ( isset( $wgLibertyUserSidebarSettings ) && $wgLibertyUserSidebarSettings ) {
+		if ( isset( $wgLibertyAltUserSidebarSettings ) && $wgLibertyAltUserSidebarSettings ) {
 			$out->addInlineStyle(
 				".Liberty .content-wrapper .liberty-content {
 					margin-right: 0;
@@ -198,16 +198,16 @@ class SkinLibertyAlt extends SkinTemplate {
 
 		// Ads setting
 		$LibertyAltUserMoreArticleSettings = $user->getOption('liberty-layout-morearticle');
-		if (isset($wgLibertyAdSetting['client']) && $wgLibertyAdSetting['client']) {
+		if (isset($wgLibertyAltAdSetting['client']) && $wgLibertyAltAdSetting['client']) {
 			// if user is login, reduce ads
-			if ( isset($wgLibertyAdGroup) && $wgLibertyAdGroup == 'differ' && $user->isLoggedIn()) {
-				$wgLibertyAdSetting['header'] == null;
-				$wgLibertyAdSetting['footer'] == null;
+			if ( isset($wgLibertyAltAdGroup) && $wgLibertyAltAdGroup == 'differ' && $user->isLoggedIn()) {
+				$wgLibertyAltAdSetting['header'] == null;
+				$wgLibertyAltAdSetting['footer'] == null;
 				if ($user->isNewbie() == False) {
-					$wgLibertyAdSetting['sidebar'] == null;
+					$wgLibertyAltAdSetting['sidebar'] == null;
 				}
 				if (isset($LibertyAltUserMoreArticleSettings) && $LibertyAltUserMoreArticleSettings) {
-					$wgLibertyAdSetting['belowarticle'] == null;
+					$wgLibertyAltAdSetting['belowarticle'] == null;
 				}
 			}
 		}
