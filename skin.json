@@ -113,12 +113,12 @@
 		}
 	},
 	"AutoloadClasses": {
-		"SkinLibertyAlt": "SkinLiberty.php",
-		"LibertyTemplate": "LibertyTemplate.php",
-		"LibertyHooks": "LibertyHooks.php"
+		"SkinLibertyAlt": "SkinLibertyAlt.php",
+		"LibertyTemplate": "LibertyAltTemplate.php",
+		"LibertyHooks": "LibertyAltHooks.php"
 	},
 	"Hooks": {
-		"GetPreferences": "LibertyHooks::onGetPreferences"
+		"GetPreferences": "LibertyAltHooks::onGetPreferences"
 	},
 	"manifest_version": 1
 }
