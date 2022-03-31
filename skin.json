@@ -14,7 +14,7 @@
 		"MediaWiki": ">= 1.35.0"
 	},
 	"ValidSkinNames": {
-		"liberty": "Liberty"
+		"libertyalt": "LibertyAlt"
 	},
 	"MessagesDirs": {
 		"Liberty": [
