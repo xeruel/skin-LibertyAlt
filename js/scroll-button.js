@@ -1,9 +1,9 @@
 $(document).ready(function () {
-  $("#liberty-scrollup").click(function () {
+  $("#libertyalt-scrollup").click(function () {
     $("html, body").animate({ scrollTop: 0 }, 400);
     return false;
   });
-  $("#liberty-scrolldown").click(function () {
+  $("#libertyalt-scrolldown").click(function () {
     $("html, body").animate({ scrollTop: $(document).height() }, 400);
     return false;
   });

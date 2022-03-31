@@ -4,12 +4,12 @@ body {
 
 header,
 #fixed-toc-button,
-.liberty-sidebar,
+.libertyalt-sidebar,
 .content-tools,
 .social-buttons,
 .footer-places,
 .catlinks,
-.liberty-notice,
+.libertyalt-notice,
 .header-ads {
 	display: none !important;
 }
@@ -18,17 +18,17 @@ header,
 	margin: 0 !important;
 }
 
-.liberty-content {
+.libertyalt-content {
 	margin-right: 0 !important;
 }
 
-.liberty-content-header,
-.liberty-content-main,
-.liberty-footer {
+.libertyalt-content-header,
+.libertyalt-content-main,
+.libertyalt-footer {
 	border: 0 !important;
 }
 
-.liberty-content-main {
+.libertyalt-content-main {
 	padding: 0 !important;
 }
 

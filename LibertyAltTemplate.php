@@ -25,7 +25,7 @@ class LibertyAltTemplate extends BaseTemplate {
 			<div class="content-wrapper">
 				<?php if ( $wgLibertyAltUserSidebarSettings == false ) { ?>
 					<aside>
-						<div class="liberty-sidebar">
+						<div class="libertyalt-sidebar">
 							<div class="live-recent-wrapper">
 								<?php $this->liveRecent(); ?>
 							</div>
@@ -35,13 +35,13 @@ class LibertyAltTemplate extends BaseTemplate {
 						</div>
 					</aside>
 				<?php } ?>
-				<div class="container-fluid liberty-content">
-					<div class="liberty-content-header">
+				<div class="container-fluid libertyalt-content">
+					<div class="libertyalt-content-header">
 						<?php if (
 							$this->data['sitenotice'] &&
 							!$request->getCookie( 'disable-notice' )
 						) { ?>
-							<div class="alert alert-dismissible fade in alert-info liberty-notice" role="alert">
+							<div class="alert alert-dismissible fade in alert-info libertyalt-notice" role="alert">
 								<button type="button" class="close" data-dismiss="alert" aria-label="Close">
 									<span aria-hidden="true">&times;</span>
 								</button>
@@ -61,7 +61,7 @@ class LibertyAltTemplate extends BaseTemplate {
 							<?php $this->html( 'subtitle' ); ?>
 						</div>
 					</div>
-					<div class="liberty-content-main" id="content">
+					<div class="libertyalt-content-main" id="content">
 						<?php if ( $this->data['newtalk'] ) { ?>
 							<div class="usermessage"><?php $this->html( 'newtalk' ) ?></div>
 						<?php }
@@ -80,7 +80,7 @@ class LibertyAltTemplate extends BaseTemplate {
 						</div>
 					<footer>
 
-						<div class="liberty-footer">
+						<div class="libertyalt-footer">
 							<?php
 							if ( $this->data['dataAfterContent'] ) {
 								$this->html( 'dataAfterContent' );
@@ -93,9 +93,9 @@ class LibertyAltTemplate extends BaseTemplate {
 							<?php $this->footer(); ?>
 						</div>
 					</footer>
-					<div id="liberty-bottombtn">
-						<div class="scroll-button" id="liberty-scrollup"><i class="fas fa-angle-up"></i></div>
-						<div class="scroll-button" id="liberty-scrolldown"><i class="fas fa-angle-down"></i></div>
+					<div id="libertyalt-bottombtn">
+						<div class="scroll-button" id="libertyalt-scrollup"><i class="fas fa-angle-up"></i></div>
+						<div class="scroll-button" id="libertyalt-scrolldown"><i class="fas fa-angle-down"></i></div>
 					</div>
 				</div>
 			</div>
@@ -348,7 +348,7 @@ class LibertyAltTemplate extends BaseTemplate {
 						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 							<span aria-hidden="true">&times;</span>
 						</button>
-						<h4 class="modal-title"><?php echo $skin->msg('liberty-login')->plain() ?></h4>
+						<h4 class="modal-title"><?php echo $skin->msg('libertyalt-login')->plain() ?></h4>
 					</div>
 					<div class="modal-body">
 						<div id="modal-login-alert" class="alert alert-hidden alert-danger" role="alert">
@@ -359,9 +359,9 @@ class LibertyAltTemplate extends BaseTemplate {
 							<input class="loginPassword form-control" id="wpPassword1" tabindex="2" placeholder="<?php echo $skin->msg('userlogin-yourpassword-ph')->plain() ?>" type="password" name="lgpassword">
 							<div class="modal-checkbox">
 								<input name="lgremember" type="checkbox" value="1" id="lgremember" tabindex="3">
-								<label for="lgremember"><?php echo $skin->msg('liberty-remember')->plain() ?></label>
+								<label for="lgremember"><?php echo $skin->msg('libertyalt-remember')->plain() ?></label>
 							</div>
-							<input class="btn btn-success btn-block" type="submit" value="<?php echo $skin->msg('liberty-login-btn')->plain() ?>" tabindex="4">
+							<input class="btn btn-success btn-block" type="submit" value="<?php echo $skin->msg('libertyalt-login-btn')->plain() ?>" tabindex="4">
 							<?php echo Linker::linkKnown(
 								SpecialPage::getTitleFor('Userlogin'),
 								$skin->msg('userlogin-joinproject'),
@@ -377,20 +377,20 @@ class LibertyAltTemplate extends BaseTemplate {
 							); ?>
 							<?php echo Linker::linkKnown(
 								SpecialPage::getTitleFor('PasswordReset'),
-								$skin->msg('liberty-forgot-pw')->plain()
+								$skin->msg('libertyalt-forgot-pw')->plain()
 							); ?>
 							<br>
 							<?php echo Linker::linkKnown(
 								SpecialPage::getTitleFor('Userlogin'),
-								$skin->msg('liberty-login-alter')->plain()
+								$skin->msg('libertyalt-login-alter')->plain()
 							); ?>
 							<input type="hidden" name="action" value="login" />
 							<input type="hidden" name="format" value="json" />
 						</form>
 					</div>
 					<div class="modal-footer">
-						<button type="button" class="btn btn-secondary" data-dismiss="modal"><?php echo $skin->msg('liberty-btn-close')->plain(); ?></button>
-						<button type="button" class="btn btn-primary"><?php echo $skin->msg('liberty-btn-save-changes')->plain(); ?></button>
+						<button type="button" class="btn btn-secondary" data-dismiss="modal"><?php echo $skin->msg('libertyalt-btn-close')->plain(); ?></button>
+						<button type="button" class="btn btn-primary"><?php echo $skin->msg('libertyalt-btn-save-changes')->plain(); ?></button>
 					</div>
 				</div>
 			</div>
@@ -422,13 +422,13 @@ class LibertyAltTemplate extends BaseTemplate {
 			<div class="live-recent-header">
 				<ul class="nav nav-tabs">
 					<li class="nav-item">
-						<a href="javascript:" class="nav-link active" id="liberty-recent-tab1">
+						<a href="javascript:" class="nav-link active" id="libertyalt-recent-tab1">
 							<?php echo $skin->msg( 'recentchanges' )->plain() ?>
 						</a>
 					</li>
 					<li class="nav-item">
-						<a href="javascript:" class="nav-link" id="liberty-recent-tab2">
-							<?php echo $skin->msg( 'liberty-recent-discussions' )->plain() ?>
+						<a href="javascript:" class="nav-link" id="libertyalt-recent-tab2">
+							<?php echo $skin->msg( 'libertyalt-recent-discussions' )->plain() ?>
 						</a>
 					</li>
 				</ul>
@@ -445,7 +445,7 @@ class LibertyAltTemplate extends BaseTemplate {
 				<?php echo Linker::linkKnown(
 					SpecialPage::getTitleFor( 'Recentchanges' ),
 					'<span class="label label-info">' .
-						$skin->msg( 'liberty-view-more' )->plain() .
+						$skin->msg( 'libertyalt-view-more' )->plain() .
 						'</span>'
 				); ?>
 			</div>
@@ -533,7 +533,7 @@ class LibertyAltTemplate extends BaseTemplate {
 					if ( $action == 'view' ) { ?>
 						<button type="button" class="btn btn-secondary tools-btn tools-share">
 							<i class="far fa-share-square"></i>
-							<?php echo $skin->msg( 'liberty-share' )->plain() ?>
+							<?php echo $skin->msg( 'libertyalt-share' )->plain() ?>
 						</button>
 					<?php } ?>
 					<?php
@@ -561,10 +561,10 @@ class LibertyAltTemplate extends BaseTemplate {
 						}
 						echo Linker::linkKnown(
 							$title,
-							$skin->msg( 'liberty-purge' )->plain(),
+							$skin->msg( 'libertyalt-purge' )->plain(),
 							[
 								'class' => 'dropdown-item',
-								'title' => $skin->msg( 'liberty-tooltip-purge' )->plain() . ' [alt+shift+p]',
+								'title' => $skin->msg( 'libertyalt-tooltip-purge' )->plain() . ' [alt+shift+p]',
 								'accesskey' => 'p'
 							],
 							[ 'action' => 'purge' ]
@@ -590,10 +590,10 @@ class LibertyAltTemplate extends BaseTemplate {
 						);
 						echo Linker::linkKnown(
 							$title,
-							$skin->msg( 'liberty-info' )->plain(),
+							$skin->msg( 'libertyalt-info' )->plain(),
 							[
 								'class' => 'dropdown-item',
-								'title' => $skin->msg( 'liberty-tooltip-info' )->plain(),
+								'title' => $skin->msg( 'libertyalt-tooltip-info' )->plain(),
 							],
 							[ 'action' => 'info' ]
 						);
@@ -849,7 +849,7 @@ class LibertyAltTemplate extends BaseTemplate {
 	}
 
 	/**
-	 * Parse [[MediaWiki:Liberty-Navbar]].
+	 * Parse [[MediaWiki:LibertyAlt-Navbar]].
 	 *
 	 * Its format is:
 	 * * <icon name>|Name of the menu displayed to the user
@@ -865,13 +865,13 @@ class LibertyAltTemplate extends BaseTemplate {
 		$userName = $this->getSkin()->getUser()->getName();
 		$userLang = $this->getSkin()->getLanguage()->mCode;
 		$globalData = ContentHandler::getContentText( WikiPage::factory(
-			Title::newFromText( 'Liberty-Navbar', NS_MEDIAWIKI )
+			Title::newFromText( 'LibertyAlt-Navbar', NS_MEDIAWIKI )
 		)->getContent( Revision::RAW ) );
 		$globalLangData = ContentHandler::getContentText( WikiPage::factory(
-			Title::newFromText( 'Liberty-Navbar/' . $userLang, NS_MEDIAWIKI )
+			Title::newFromText( 'LibertyAlt-Navbar/' . $userLang, NS_MEDIAWIKI )
 		)->getContent( Revision::RAW ) );
 		$userData = ContentHandler::getContentText( WikiPage::factory(
-			Title::newFromText( $userName . '/Liberty-Navbar', NS_USER )
+			Title::newFromText( $userName . '/LibertyAlt-Navbar', NS_USER )
 		)->getContent( Revision::RAW ) );
 		if ( !empty( $userData ) ) {
 			$data = $userData;
@@ -880,7 +880,7 @@ class LibertyAltTemplate extends BaseTemplate {
 		} else {
 			$data = $globalData;
 		}
-		// Well, [[MediaWiki:Liberty-Navbar]] *should* have some content, but
+		// Well, [[MediaWiki:LibertyAlt-Navbar]] *should* have some content, but
 		// if it doesn't, bail out here so that we don't trigger E_NOTICEs
 		// about undefined indexes later on
 		if ( empty( $data ) ) {

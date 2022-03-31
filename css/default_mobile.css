@@ -1,110 +1,110 @@
 /* Max-width: 1023 Desktop deadline */
 @media screen and (max-width: 1023px) {
-	.Liberty .nav-wrapper .navbar {
+	.LibertyAlt .nav-wrapper .navbar {
 		padding: 0 0.5rem;
 	}
 
-	.Liberty .nav-wrapper .navbar .form-inline {
+	.LibertyAlt .nav-wrapper .navbar .form-inline {
 		float: left;
 		padding: 0;
 		padding-top: 0.25rem;
 		padding-bottom: 0.5rem;
 	}
 
-	.Liberty .nav-wrapper .navbar .form-inline .input-group {
+	.LibertyAlt .nav-wrapper .navbar .form-inline .input-group {
 		display: table;
 		width: 100%;
 	}
 
-	.Liberty .nav-wrapper .navbar .form-inline .input-group .form-control {
+	.LibertyAlt .nav-wrapper .navbar .form-inline .input-group .form-control {
 		width: 100%;
 	}
 
-	.Liberty .nav-wrapper .navbar .form-inline .input-group .input-group-btn {
+	.LibertyAlt .nav-wrapper .navbar .form-inline .input-group .input-group-btn {
 		width: 1%;
 	}
 
-	.Liberty .content-wrapper {
+	.LibertyAlt .content-wrapper {
 		margin-top: 5.89rem;
 	}
 
-	.Liberty .content-wrapper .liberty-sidebar {
+	.LibertyAlt .content-wrapper .libertyalt-sidebar {
 		display: none;
 	}
 
-	.Liberty .content-wrapper .liberty-content {
+	.LibertyAlt .content-wrapper .libertyalt-content {
 		margin-right: auto;
 		padding-bottom: 0.5rem;
 	}
 
-	.Liberty .content-wrapper .liberty-content .liberty-content-header .liberty-notice {
+	.LibertyAlt .content-wrapper .libertyalt-content .libertyalt-content-header .libertyalt-notice {
 		margin: 0.5rem;
 	}
 
-	.Liberty .content-wrapper .liberty-content .liberty-content-header .content-tools {
+	.LibertyAlt .content-wrapper .libertyalt-content .libertyalt-content-header .content-tools {
 		float: none;
 		text-align: right;
 		border-bottom: 1px solid #e1e8ed;
 		padding: 0.5rem;
 	}
 
-	.Liberty .content-wrapper .liberty-content .liberty-content-header .title {
+	.LibertyAlt .content-wrapper .libertyalt-content .libertyalt-content-header .title {
 		padding: 0.5rem;
 	}
 
-	.Liberty .content-wrapper .liberty-content .liberty-content-header .contentSub {
+	.LibertyAlt .content-wrapper .libertyalt-content .libertyalt-content-header .contentSub {
 		margin-top: -0.25rem;
 		padding: 0.5rem;
 		padding-top: 0;
 	}
 
-	.Liberty .content-wrapper .liberty-content .liberty-content-header .header-ads {
+	.LibertyAlt .content-wrapper .libertyalt-content .libertyalt-content-header .header-ads {
 		margin: 0.5rem;
 		margin-bottom: 0;
 	}
 
-	.Liberty .content-wrapper .liberty-content .liberty-content-main {
+	.LibertyAlt .content-wrapper .libertyalt-content .libertyalt-content-main {
 		padding: 0.5rem;
 	}
 
-	.Liberty .content-wrapper .liberty-content .liberty-content-main #upload-div {
+	.LibertyAlt .content-wrapper .libertyalt-content .libertyalt-content-main #upload-div {
 		display: none;
 	}
 
-	.Liberty .content-wrapper .liberty-content .liberty-content-main iframe {
+	.LibertyAlt .content-wrapper .libertyalt-content .libertyalt-content-main iframe {
 		width: 80%;
 		height: 30rem;
 	}
 
-	.Liberty .content-wrapper .liberty-content .liberty-content-main .mobile-table-wrapper {
+	.LibertyAlt .content-wrapper .libertyalt-content .libertyalt-content-main .mobile-table-wrapper {
 		overflow-x: auto;
 	}
 
-	.Liberty .content-wrapper .liberty-content .bottom-ads {
+	.LibertyAlt .content-wrapper .libertyalt-content .bottom-ads {
 		padding: 0.5rem;
 		background-color: #fff;
 		border-left: 1px solid #e1e8ed;
 		border-right: 1px solid #e1e8ed;
 	}
 
-	.Liberty .content-wrapper .liberty-footer {
+	.LibertyAlt .content-wrapper .libertyalt-footer {
 		padding: 0.5rem;
 	}
 }
 /* Max-width: 890 convert for tablet mode alt */
 @media screen and (max-width: 890px) {
-	.Liberty .nav-wrapper .navbar .navbar-nav .nav-item .fa,
-	.Liberty .nav-wrapper .navbar .navbar-nav .nav-item .fas,
-	.Liberty .nav-wrapper .navbar .navbar-nav .nav-item .far {
+	.LibertyAlt .nav-wrapper .navbar .navbar-nav .nav-item .fa,
+	.LibertyAlt .nav-wrapper .navbar .navbar-nav .nav-item .fas,
+	.LibertyAlt .nav-wrapper .navbar .navbar-nav .nav-item .far {
 		text-align: center;
 		margin: 0 0.25rem;
 	}
 
-	.Liberty .nav-wrapper .navbar .navbar-nav .nav-item .nav-link .hide-title {
+	.LibertyAlt .nav-wrapper .navbar .navbar-nav .nav-item .nav-link .hide-title {
 		display: none;
 	}
 
-	.Liberty .content-wrapper .liberty-content .liberty-content-main iframe {
+	.LibertyAlt .content-wrapper .libertyalt-content .libertyalt-content-main iframe {
 		width: 90%;
 		height: 20rem;
 	}
@@ -114,18 +114,18 @@
 }
 /* Max-width: 798 Menu deadline, convert for tablet mode */
 @media screen and (max-width: 798px) {
-	.Liberty .nav-wrapper .navbar .navbar-nav .nav-item .fa,
-	.Liberty .nav-wrapper .navbar .navbar-nav .nav-item .fas,
-	.Liberty .nav-wrapper .navbar .navbar-nav .nav-item .far {
+	.LibertyAlt .nav-wrapper .navbar .navbar-nav .nav-item .fa,
+	.LibertyAlt .nav-wrapper .navbar .navbar-nav .nav-item .fas,
+	.LibertyAlt .nav-wrapper .navbar .navbar-nav .nav-item .far {
 		text-align: center;
 		margin: 0 0.25rem;
 	}
 
-	.Liberty .nav-wrapper .navbar .navbar-nav .nav-item .nav-link .hide-title {
+	.LibertyAlt .nav-wrapper .navbar .navbar-nav .nav-item .nav-link .hide-title {
 		display: none;
 	}
 
-	.Liberty .content-wrapper .liberty-content .liberty-content-main iframe {
+	.LibertyAlt .content-wrapper .libertyalt-content .libertyalt-content-main iframe {
 		width: 90%;
 		height: 20rem;
 	}
@@ -133,27 +133,27 @@
 }
 /* Max-width: 520px Under tablet */
 @media screen and (max-width: 520px) {
-	.Liberty .nav-wrapper .navbar .navbar-nav .nav-item .nav-link {
+	.LibertyAlt .nav-wrapper .navbar .navbar-nav .nav-item .nav-link {
 		padding: 0.7rem 0.3rem;
 	}
 
-	.Liberty .nav-wrapper .navbar .navbar-login .view-logout {
+	.LibertyAlt .nav-wrapper .navbar .navbar-login .view-logout {
 		display: block;
 	}
 
-	.Liberty .nav-wrapper .navbar .navbar-login .hide-logout {
+	.LibertyAlt .nav-wrapper .navbar .navbar-login .hide-logout {
 		display: none;
 	}
 
-	html .Liberty .content-wrapper .liberty-content .liberty-content-main table.infobox,
-	html .Liberty .content-wrapper .liberty-content .liberty-content-main table.wikitable {
+	html .LibertyAlt .content-wrapper .libertyalt-content .libertyalt-content-main table.infobox,
+	html .LibertyAlt .content-wrapper .libertyalt-content .libertyalt-content-main table.wikitable {
 		float: none;
 		width: 100%;
 		margin: auto;
 		margin-bottom: 1rem;
 	}
 
-	.Liberty .content-wrapper .liberty-content .liberty-content-main iframe {
+	.LibertyAlt .content-wrapper .libertyalt-content .libertyalt-content-main iframe {
 		width: 100%;
 		height: 15rem;
 	}
@@ -165,35 +165,35 @@
 
 /* Max-width: 397px Under Big-phone */
 @media screen and (max-width: 397px) {
-	.Liberty .nav-wrapper .navbar .navbar-brand {
+	.LibertyAlt .nav-wrapper .navbar .navbar-brand {
 		width: 5rem;
 		background: transparent url( ../img/logo_alt.png ) no-repeat scroll left center/auto 1.5rem;
 	}
 
-	.Liberty .nav-wrapper .navbar .navbar-nav .nav-item .nav-link::after {
+	.LibertyAlt .nav-wrapper .navbar .navbar-nav .nav-item .nav-link::after {
 		display: none;
 	}
 
-	.Liberty .nav-wrapper .navbar .navbar-nav .nav-item .nav-link {
+	.LibertyAlt .nav-wrapper .navbar .navbar-nav .nav-item .nav-link {
 		padding: 0.7rem 0.2rem;
 	}
 
-	.Liberty .nav-wrapper .navbar .navbar-login {
+	.LibertyAlt .nav-wrapper .navbar .navbar-login {
 		padding-left: 0.4rem;
 	}
 
-	.Liberty .nav-wrapper .navbar .navbar-notification {
+	.LibertyAlt .nav-wrapper .navbar .navbar-notification {
 		padding-left: 0.4rem;
 	}
 
-	.Liberty .nav-wrapper .navbar .form-inline {
+	.LibertyAlt .nav-wrapper .navbar .form-inline {
 		padding-top: 0.04rem;
 	}
 }
 
 /* Max-width: 34rem; */
 @media screen and (max-width: 34rem) {
-	.Liberty .login-modal .modal-sm {
+	.LibertyAlt .login-modal .modal-sm {
 		width: auto;
 	}
 }
