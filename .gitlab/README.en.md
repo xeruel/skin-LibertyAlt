@@ -1,6 +1,6 @@
 # Liberty MediaWiki Skin
 
-Default skin of [LibreWiki](https://librewiki.net). This skin will be the main skin for the Liberty Wiki Engine.
+Default skin of [LibreWiki](https://librewiki.net)'s alternative form.
 
 ## Development
 
@@ -13,19 +13,19 @@ Please set these variables in the LocalSettings.php file.
 
 | Name | Description | Example Variable | Default Variable |
 | ---- | ---- | ---- | ---- |
-| `$wgLibertyMainColor` | `theme-color` configurations, main color of site | `#4188F1` | `#4188F1` |
-| `$wgLibertySecondColor` | Configure of second color of site | `#2774DC` | The value of `$wgLibertyMainColor` subtracted by `1A1415` |
-| `$wgTwitterAccount` | Default Twitter account to set a mention | `librewiki` | (none) |
-| `$wgLibertyOgLogo` | OpenGraph Image Logo | `https://librewiki.net/images/6/6a/Libre_favicon.png` | (Value of `$wgLogo`) |
-| `$wgNaverVerification` | Naver Webmater Tool Verification Code | (Value supplied by Naver.com) | (none) |
-| `$wgLibertyAdSetting` | Google Adsense Settings | `array( 'client' => '(Value supplied by Google)', 'header' => '1234567890', 'right' => '0987654321' )` | (none) |
-| `$wgLibertyEnableLiveRC` | Enables 'Recent Cahnges' on the right side | `true` | `true` |
-| `$wgLibertyMaxRecent` | Recent X edits appearing in 'Recent Changes' | `10` | `10` |
-| `$wgLibertyLiveRCArticleNamespaces` | Namespaces for the first tab in 'Recent Changes' | `[NS_MAIN, NS_PROJECT, NS_TEMPLATE, NS_HELP, NS_CATEGORY]` | `[NS_MAIN, NS_PROJECT, NS_TEMPLATE, NS_HELP, NS_CATEGORY]` |
-| `$wgLibertyLiveRCTalkNamespaces` | Namespaces for the second tab in 'Recent Changes' | `[NS_TALK, NS_USER_TALK, NS_PROJECT_TALK, NS_FILE_TALK, NS_MEDIAWIKI_TALK, NS_TEMPLATE_TALK, NS_HELP_TALK, NS_CATEGORY_TALK]` | `[NS_TALK, NS_USER_TALK, NS_PROJECT_TALK, NS_FILE_TALK, NS_MEDIAWIKI_TALK, NS_TEMPLATE_TALK, NS_HELP_TALK, NS_CATEGORY_TALK]` |
+| `$wgLibertyAltMainColor` | `theme-color` configurations, main color of site | `#4188F1` | `#4188F1` |
+| `$wgLibertyAltSecondColor` | Configure of second color of site | `#2774DC` | The value of `$wgLibertyAltMainColor` subtracted by `1A1415` |
+| `$wgAltTwitterAccount` | Default Twitter account to set a mention | `librewiki` | (none) |
+| `$wgLibertyAltOgLogo` | OpenGraph Image Logo | `https://librewiki.net/images/6/6a/Libre_favicon.png` | (Value of `$wgLogo`) |
+| `$wgAltNaverVerification` | Naver Webmater Tool Verification Code | (Value supplied by Naver.com) | (none) |
+| `$wgLibertyAltAdSetting` | Google Adsense Settings | `array( 'client' => '(Value supplied by Google)', 'header' => '1234567890', 'right' => '0987654321' )` | (none) |
+| `$wgLibertyAltEnableLiveRC` | Enables 'Recent Cahnges' on the right side | `true` | `true` |
+| `$wgLibertyAltMaxRecent` | Recent X edits appearing in 'Recent Changes' | `10` | `10` |
+| `$wgLibertyAltLiveRCArticleNamespaces` | Namespaces for the first tab in 'Recent Changes' | `[NS_MAIN, NS_PROJECT, NS_TEMPLATE, NS_HELP, NS_CATEGORY]` | `[NS_MAIN, NS_PROJECT, NS_TEMPLATE, NS_HELP, NS_CATEGORY]` |
+| `$wgLibertyAltLiveRCTalkNamespaces` | Namespaces for the second tab in 'Recent Changes' | `[NS_TALK, NS_USER_TALK, NS_PROJECT_TALK, NS_FILE_TALK, NS_MEDIAWIKI_TALK, NS_TEMPLATE_TALK, NS_HELP_TALK, NS_CATEGORY_TALK]` | `[NS_TALK, NS_USER_TALK, NS_PROJECT_TALK, NS_FILE_TALK, NS_MEDIAWIKI_TALK, NS_TEMPLATE_TALK, NS_HELP_TALK, NS_CATEGORY_TALK]` |
 
 ## Navbar
-Please fill out `MediaWiki:Liberty-Navbar` article in the following format.
+Please fill out `MediaWiki:LibertyAlt-Navbar` article in the following format.
 
 * First-Level menu:
   * `* icon=icon | display=display text | title=hover text | link=link | access=shortcut key | class=custom HTML classes | group=required user group | right=required user right`
