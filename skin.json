@@ -113,7 +113,7 @@
 		}
 	},
 	"AutoloadClasses": {
-		"SkinLiberty": "SkinLiberty.php",
+		"SkinLibertyAlt": "SkinLiberty.php",
 		"LibertyTemplate": "LibertyTemplate.php",
 		"LibertyHooks": "LibertyHooks.php"
 	},
