@@ -1,5 +1,5 @@
 {
-	"name": "Liberty",
+	"name": "LibertyAlt",
 	"author": [
 		"Librewiki developers",
 		"..."
@@ -22,7 +22,7 @@
 		]
 	},
 	"config": {
-		"LibertyEnableLiveRC": true,
+		"LibertyAltEnableLiveRC": true,
 		"LibertyUseGravatar": true,
 		"LibertyMainColor": "#4188F1",
 		"LibertySecondColor": null,
