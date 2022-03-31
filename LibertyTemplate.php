@@ -7,7 +7,7 @@ class LibertyTemplate extends BaseTemplate {
 	 * execute() Method
 	 */
 	public function execute() {
-		global $wgLibertyAdSetting, $wgLibertyUserSidebarSettings;
+		global $wgLibertyAltAdSetting, $wgLibertyAltUserSidebarSettings;
 
 		$skin = $this->getSkin();
 		$request = $skin->getRequest();
@@ -23,13 +23,13 @@ class LibertyTemplate extends BaseTemplate {
 		</header>
 		<section>
 			<div class="content-wrapper">
-				<?php if ( $wgLibertyUserSidebarSettings == false ) { ?>
+				<?php if ( $wgLibertyAltUserSidebarSettings == false ) { ?>
 					<aside>
 						<div class="liberty-sidebar">
 							<div class="live-recent-wrapper">
 								<?php $this->liveRecent(); ?>
 							</div>
-							<?php if ( isset( $wgLibertyAdSetting[ 'right' ] ) && $wgLibertyAdSetting[ 'right' ] ) {
+							<?php if ( isset( $wgLibertyAltAdSetting[ 'right' ] ) && $wgLibertyAltAdSetting[ 'right' ] ) {
 								$this->buildAd( 'right' );
 							} ?>
 						</div>
@@ -48,7 +48,7 @@ class LibertyTemplate extends BaseTemplate {
 								<?php $this->html( 'sitenotice' ); ?>
 							</div>
 						<?php } ?>
-						<?php if ( isset( $wgLibertyAdSetting['header'] ) && $wgLibertyAdSetting['header'] ) {
+						<?php if ( isset( $wgLibertyAltAdSetting['header'] ) && $wgLibertyAltAdSetting['header'] ) {
 							$this->buildAd( 'header' );
 						}
 						$this->contentsToolbox(); ?>
@@ -73,7 +73,7 @@ class LibertyTemplate extends BaseTemplate {
 							<?php $this->html( 'bodycontent' ); ?>
 						</article>
 						<?php
-						if ( isset( $wgLibertyAdSetting['belowarticle'] ) && $wgLibertyAdSetting['belowarticle'] ) {
+						if ( isset( $wgLibertyAltAdSetting['belowarticle'] ) && $wgLibertyAltAdSetting['belowarticle'] ) {
 								$this->buildAd( 'belowarticle' );
 						}
 						?>
@@ -86,7 +86,7 @@ class LibertyTemplate extends BaseTemplate {
 								$this->html( 'dataAfterContent' );
 							}
 							?>
-						<?php if ( isset( $wgLibertyAdSetting['footer'] ) && $wgLibertyAdSetting['footer'] ) {
+						<?php if ( isset( $wgLibertyAltAdSetting['footer'] ) && $wgLibertyAltAdSetting['footer'] ) {
 							$this->buildAd( 'footer' );
 						} ?>
 							<div class="bottom-ads"></div>
@@ -102,7 +102,7 @@ class LibertyTemplate extends BaseTemplate {
 		</section>
 		<?php
 		// Only load AdSense JS is ads are enabled in site configuration
-		if ( isset( $wgLibertyAdSetting['client'] ) && $wgLibertyAdSetting['client'] ) {
+		if ( isset( $wgLibertyAltAdSetting['client'] ) && $wgLibertyAltAdSetting['client'] ) {
 			// @codingStandardsIgnoreLine
 			echo( '<script async defer src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>' );
 		}
@@ -190,7 +190,7 @@ class LibertyTemplate extends BaseTemplate {
 	 * Login box function, build top menu's login button.
 	 */
 	protected function loginBox() {
-		global $wgLibertyUseGravatar;
+		global $wgLibertyAltUseGravatar;
 
 		$skin = $this->getSkin();
 		$user = $skin->getUser();
@@ -201,7 +201,7 @@ class LibertyTemplate extends BaseTemplate {
 			if ( $user->isLoggedIn() ) {
 				$personalTools = $this->getPersonalTools();
 				// ...and Gravatar is enabled in site config...
-				if ( $wgLibertyUseGravatar ) {
+				if ( $wgLibertyAltUseGravatar ) {
 					// ...and the user has a confirmed email...
 					if ( $user->getEmailAuthenticationTimestamp() ) {
 						// ...then, and only then, build the correct Gravatar URL
@@ -404,18 +404,18 @@ class LibertyTemplate extends BaseTemplate {
 	 * Live recent function, build right side's Recent menus.
 	 */
 	protected function liveRecent() {
-		global $wgLibertyEnableLiveRC,
-			$wgLibertyMaxRecent,
-			$wgLibertyLiveRCArticleNamespaces,
-			$wgLibertyLiveRCTalkNamespaces;
+		global $wgLibertyAltEnableLiveRC,
+			$wgLibertyAltMaxRecent,
+			$wgLibertyAltLiveRCArticleNamespaces,
+			$wgLibertyAltLiveRCTalkNamespaces;
 		// Don't bother outputting this if the live RC feature is disabled in
 		// site configuration
-		if ( !$wgLibertyEnableLiveRC ) {
+		if ( !$wgLibertyAltEnableLiveRC ) {
 			return;
 		}
 		$skin = $this->getSkin();
-		$articleNS = implode( "|", $wgLibertyLiveRCArticleNamespaces );
-		$talkNS = implode( "|", $wgLibertyLiveRCTalkNamespaces );
+		$articleNS = implode( "|", $wgLibertyAltLiveRCArticleNamespaces );
+		$talkNS = implode( "|", $wgLibertyAltLiveRCTalkNamespaces );
 	?>
 		<div class="live-recent" data-article-ns="<?php echo $articleNS ?>" 
 			data-talk-ns="<?php echo $talkNS ?>">
@@ -437,7 +437,7 @@ class LibertyTemplate extends BaseTemplate {
 				<ul class="live-recent-list" id="live-recent-list">
 					<?php echo str_repeat(
 						'<li><span class="recent-item">&nbsp;</span></li>',
-						$wgLibertyMaxRecent
+						$wgLibertyAltMaxRecent
 					); ?>
 				</ul>
 			</div>
@@ -1201,7 +1201,7 @@ class LibertyTemplate extends BaseTemplate {
 	 * @param string $position Ad position
 	 */
 	protected function buildAd( $position ) {
-		global $wgLibertyAdSetting;
+		global $wgLibertyAltAdSetting;
 
 		$adFormat = 'auto';
 		$fullWidthResponsive = 'true';
@@ -1213,8 +1213,8 @@ class LibertyTemplate extends BaseTemplate {
 		<div class="<?php echo $position; ?>-ads">
 			<ins class="adsbygoogle" 
 				data-full-width-responsive="<?php echo $fullWidthResponsive; ?>" 
-				data-ad-client="<?php echo $wgLibertyAdSetting['client']; ?>" 
-				data-ad-slot="<?php echo $wgLibertyAdSetting[$position]; ?>"
+				data-ad-client="<?php echo $wgLibertyAltAdSetting['client']; ?>" 
+				data-ad-slot="<?php echo $wgLibertyAltAdSetting[$position]; ?>"
 				data-ad-format="<?php echo $adFormat; ?>">
 			</ins>
 		</div>
