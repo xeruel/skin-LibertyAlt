@@ -2,7 +2,7 @@
 
 use MediaWiki\MediaWikiServices;
 
-class LibertyTemplate extends BaseTemplate {
+class LibertyAltTemplate extends BaseTemplate {
 	/**
 	 * execute() Method
 	 */

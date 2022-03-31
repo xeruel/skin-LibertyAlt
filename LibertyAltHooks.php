@@ -1,5 +1,5 @@
 <?php //phpcs:ignore
-class LibertyHooks extends Hooks {
+class LibertyAltHooks extends Hooks {
 	/**
 	 * Preference
 	 * @param User $user user
