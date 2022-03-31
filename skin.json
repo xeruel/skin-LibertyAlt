@@ -23,16 +23,16 @@
 	},
 	"config": {
 		"LibertyAltEnableLiveRC": true,
-		"LibertyUseGravatar": true,
-		"LibertyMainColor": "#4188F1",
-		"LibertySecondColor": null,
-		"LibertyAdSetting": null,
-		"LibertyOgLogo": null,
+		"LibertyAltUseGravatar": true,
+		"LibertyAltMainColor": "#4188F1",
+		"LibertyAltSecondColor": null,
+		"LibertyAltAdSetting": null,
+		"LibertyAltOgLogo": null,
 		"TwitterAccount": null,
 		"NaverVerification": null,
-		"LibertyLiveRCArticleNamespaces": [0, 4, 10, 12, 14],
-		"LibertyLiveRCTalkNamespaces": [1, 3, 5, 7, 9, 11, 13, 15],
-		"LibertyMaxRecent": 10
+		"LibertyAltLiveRCArticleNamespaces": [0, 4, 10, 12, 14],
+		"LibertyAltLiveRCTalkNamespaces": [1, 3, 5, 7, 9, 11, 13, 15],
+		"LibertyAltMaxRecent": 10
 	},
 	"ResourceModules": {
 		"skins.liberty.styles": {
@@ -102,7 +102,7 @@
 	},
 	"ResourceFileModulePaths": {
 		"localBasePath": "",
-		"remoteSkinPath": "Liberty"
+		"remoteSkinPath": "LibertyAlt"
 	},
 	"ResourceModuleSkinStyles": {
 		"liberty": {
